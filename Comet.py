@@ -9,7 +9,7 @@ sim.add(particle="Jupiter")
 sim.add(particle="Saturn")
 sim.add(particle="Uranus")
 sim.add(particle="Neptune")
-sim.add(m=2.2*10**14, a=17.834, e=0.96714,  inc=2.832, Omega= 1.012, M=0.67)
+sim.add(m=2.2*10**14, a=17.834, e=0.96714,  inc=2.832, Omega= 1.012, M=0.67) #Halley's Comet
 #sim.add(particle='Mercury')
 #sim.status()
 year=arange(1,1000,1)
