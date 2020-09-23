@@ -8,7 +8,7 @@ sim.add(m=1e-6, a=1)
 sim.move_to_com()
 ps=sim.particles
 tau=1000
-#Adding an extra force F=m.c
+#Force is velocity dependent
 def migration_force(reb_sim):
 	ps[1].ax-=ps[1].vx/tau
 	ps[1].ay-=ps[1].vy/tau
