@@ -27,7 +27,6 @@ for first in range(len(plannet)):
 			for particles in plannets:	
 				sim.add(particle=particles, date=date)
 
-
 			months_array=[]
 			dist=[]
 			ps=sim.particles
@@ -50,17 +49,10 @@ for first in range(len(plannet)):
 			yr=str(2000+(months_array[0]//12))
 			mon=months_stack[months_array[0]%12]
 			dis=dist[0]
-			'''
-			table[first+1][second+1]=(yr)
-			table[second+1][first+1]=(yr)
-			print(table)
-			'''
 			Dummy[first].append('{0} {1}'.format(yr,mon))
 	#		print(yr)
 		else:
 			Dummy[first].append('X')
-#for k in range(len(plannet)):
+
 table=[[Pt[k], Mercury[k], Venus[k], Earth[k], Mars[k], Jupiter[k], Saturn[k], Uranus[k],Neptune[k]] for k in range(len(Pt))]
-#data=column_stack((Pt, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune))
-#savetxt('Chart.txt', data, fmt='%s')
 print(tabulate(table))
